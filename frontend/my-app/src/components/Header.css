@@ -1,0 +1,97 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 0.5px solid grey;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    width: 100px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.logo-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    color: #ea6d00;
+    margin: 0;
+    transition: opacity 0.3s ease;
+    flex-shrink: 0;
+}
+
+.icons-container {
+    display: flex;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.icon {
+    font-size: 40px;
+    color: #ea6d00;
+    padding: 10px;
+    border: 1px solid #ea6d00;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.icon-select {
+    color: white;
+    background-color: #ea6d00;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        width: 60px;
+    }
+
+    .logo-name {
+        font-size: 2em;
+    }
+
+    .icon {
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-img {
+        width: 50px;
+    }
+
+    .logo-name {
+        font-size: 1.5em;
+    }
+
+    .icon {
+        font-size: 25px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        width: 40px;
+    }
+
+    .logo-name {
+        display: none;
+    }
+
+    .icon {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
